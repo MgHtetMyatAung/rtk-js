@@ -7,10 +7,9 @@ export default function LoginPage() {
   const { handleSubmit, register } = useForm();
   const onSubmit = async (data) => {
     try {
-      console.log(data);
       await login(data).unwrap();
     } catch (error) {
-      alert(error.data.message);
+      console.log(error);
     }
   };
   return (
