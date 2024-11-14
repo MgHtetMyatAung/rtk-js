@@ -1,5 +1,5 @@
 import { ROUTE_ACCESS, ROUTE_PATHS } from "../constant/route";
-import { HomePage, LoginPage, NotFoundPage } from "../pages";
+import { HomePage, LoginPage, NotFoundPage } from "../pages/index";
 
 export const route_configs = [
   {

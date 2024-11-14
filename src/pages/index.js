@@ -1,7 +1,11 @@
-export { default as HomePage } from "./home/Home.Page";
+import React from "react";
+
+const HomePage = React.lazy(() => import("./home/Home.Page"));
 
 // for auth pages
-export { default as LoginPage } from "./auth/Login.Page";
+const LoginPage = React.lazy(() => import("./auth/Login.Page"));
 
 // for not found page
-export { default as NotFoundPage } from "./404/NotFound.Page";
+const NotFoundPage = React.lazy(() => import("./404/NotFound.Page"));
+
+export { HomePage, LoginPage, NotFoundPage };
