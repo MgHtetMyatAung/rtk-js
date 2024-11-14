@@ -71,6 +71,7 @@ export const store = configureStore({
     }).concat(baseApi.middleware, rtkQueryErrorLogger),
   devTools: true,
 });
+
 setupListeners(store.dispatch);
 
 export const persister = persistStore(store);
