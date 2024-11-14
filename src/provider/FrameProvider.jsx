@@ -3,7 +3,7 @@ import { StrictMode } from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { persister, store } from "../redux/store";
-import { PersistGate } from "redux-persist/integration/react";
+import { PersistGate } from "redux-persist/lib/integration/react";
 
 /* eslint-disable react/prop-types */
 export default function FrameProvider({ children }) {
