@@ -12,5 +12,5 @@ export default function AuthProvider({ children }) {
       navigate(ROUTE_PATHS.HOME);
     }
   }, [isAuthenticated, navigate]);
-  return <>{children}</>;
+  return <>{!isAuthenticated && children}</>;
 }

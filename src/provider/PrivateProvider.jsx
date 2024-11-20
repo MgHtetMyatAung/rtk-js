@@ -14,5 +14,5 @@ export default function PrivateProvider({ children }) {
       navigate(ROUTE_PATHS.LOGIN);
     }
   }, [isAuthenticated, navigate]);
-  return <>{children}</>;
+  return <>{isAuthenticated && children}</>;
 }
